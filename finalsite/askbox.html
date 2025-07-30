@@ -1,20 +1,130 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html>
+ 
 <head>
-  <meta charset="utf-8" >
-   <title>Black Goose Bistro - Pizza Order Form</title>
-   <style type="text/css">
-      ol, ul { 
-     list-style-type: none;
-      }
-   </style>
-</head>
-
+<meta charset="utf-8">
+<title>Sakura Floral Society - Ask Box</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+</head> 
 <body>
+<style>
+.eb-garamond-<uniquifier> {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.monsieur-la-doulaise-regular {
+  font-family: "Monsieur La Doulaise", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: #F8F6F3;
+  margin: 10 10%;
+  font-family: serif;
+  color: #716154
+  }
+h1 {
+  text-align: center;
+  font-family: serif;
+  font-weight: bold;
+  font-size:3em;
+  margin-top: 50px;
+  margin-left: 700px;
+  margin-right: 700px;
+  color: #EA7B99;
+  background-color: #F9D7DD;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+h2 {
+  color: #F1B1C2;
+  font-size: 1.5em;
+  margin-top: 50px;
+}
+h3 {
+  color: #F8CBD8;
+  font-size: 1.2em;
+  font-weight: light;
+}
+div {
+  margin-left: 200px;
+}
+img.responsive-img {
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+      display: block;
+      margin: 1em auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+ nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+      text-align: center;
+      background-color: #FFFFFF;
+      margin-left: 900px;
+      margin-right: 900px;
+    }
 
-<h1>Black Goose Bistro | Pizza Order Form</h1>
+    nav li {
+      display: inline;
+      margin: 0 15px;
+    }
 
-<p>Our 12" wood-fired pizzas are avaiable for delivery. Build your custom pizza and we'll deliver it within an hour.</p>
+    nav a {
+      text-decoration: none;
+      color: #FABFCE;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      color: #a8492e;
+    }
+  .button {
+      display: block;
+      width: fit-content;
+      margin: 30px auto;
+      padding: 12px 24px;
+      background-color: #F690A0;
+      color: white;
+      font-weight: italic;
+      font-size: 1.2em;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .button:hover {
+      background-color: #E8BDC5;
+    }
+
+</style>
+
+<img src="sakurabg (1).png", alt="sakura branch with flowers", class="responsive-img">
+<h1 class: ".monsieur-la-doulaise-regular">Ask Box</h1>
+
+<nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="floweroftheweek.html">Flower of the Week</a></li>
+      <li><a href="blog.html">Petal Party Blog</a></li>
+      <li><a href="magazine.html">Get our Magazine!</a></li>
+    </ul>
+</nav>
+<br>
+
+<div>
+<h2>Ask Box</h2>
+Here you can ask us any questions you may have about flowers and other flora!<br>
+We'd love to help! Just submit this form, and we'll get back to you soon!<br>
+Who knows, the answer to your question might just appear in an upcoming blog post!
+</div>
 
 
 <form action="http://www.blackgoosebistro.com/pizza.php" method="post">
@@ -23,66 +133,26 @@
   <legend>Your Info:</legend>
   <ul>
     <li><label for="form-name">Name:</label> <input type="text" name="customername" id="form-name"></li>
-    <li><label for="form-address">Address:</label> <input type="text" name="address" id="form-address"></li>
     <li><label for="form-tel">Phone:</label> <input type="tel" name="telephone" id="form-tel"></li>
     <li><label for="form-email">Email: <input type="email" name="email" id="form-email"></label></li>
-    <li>Delivery instructions:<br>
-    <textarea name="instructions" rows="4" cols="60" maxlength="400" id="form-story" placeholder="400 character limit"></textarea></li>
+    <li><label>Keep question anonymous?<input type="radio" name="anonymous" value="yes"> Y </label></li>
+    <li><input type="radio" name="anonymous" value="no"> N <li>
+    <li>Your question:<br>
+    <textarea name="instructions" rows="6" cols="60" maxlength="600" id="form-story" placeholder="600 character limit"></textarea></li>
   </ul>
 </fieldset>
-
-<div>
-<h2>Ask Box</h2>
-Here you can ask us any questions you may have about flowers and other flora!<br>
-We'd love to help! Just submit this form, and we'll get back to you soon!<br>
-Who knows, the answer to your question might just appear in an upcoming blog post!
-</div>
   
-<fieldset>
-  <legend>Pizza specs</legend>
-  <fieldset>
-    <legend>Crust <em>(Choose one)</em>:</legend>
-    <ul>
-      <li><label><input type="radio" name="crust" value="white"> Classic white</label></li>
-      <li><label><input type="radio" name="crust" value="multigrain"> Multigrain</label></li>
-      <li><label><input type="radio" name="crust" value="cheese crust"> Cheese-stuffed crust</label></li>
-      <li><label><input type="radio" name="crust" value="gluten free"> Gluten-free</label></li>
-    </ul>
-  </fieldset>
 
-  <fieldset>
-  <legend>Toppings <em>(Choose as many as you want)</em></legend>
-    <ul>
-      <li><label><input type="checkbox" name="toppings[]" value="red sauce" checked> Red sauce</label></li>
-      <li><label><input type="checkbox" name="toppings[]" value="white sauce"> White sauce</label></li>
-      <li><label><input type="checkbox" name="toppings[]" value="mozzarella"> Mozzarella Cheese</label></li>
-      <li><label><input type="checkbox" name="toppings[]" value="pepperoni"> Pepperoni</label></li>
-      <li><label><input type="checkbox" name="toppings[]" value="onions"> Mushrooms</label></li>
-      <li><label><input type="checkbox" name="toppings[]" value="peppers"> Peppers</label></li>
-      <li><label><input type="checkbox" name="toppings[]" value="sausage"> Anchovies</label></li>
-    </ul>
-  </fieldset>
 
-  <fieldset>
-  <legend>Number</legend>
-  <p>How many pizzas: 
-  <select name="pizzas" size="1">
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-    <option>4</option>
-    <option>5</option>
-    <option>6</option>
-  </select>
-  </p>
-  </fieldset>
-
-</fieldset> <!-- closes 'Pizza Specs' fieldset -->
-
-<p><input type="submit" value="Looks good, place order!">
+<p><input type="submit" value="Submit">
 <input type="reset"></p>
 
 </form>
+
+<br><br><br>
+<div>
+ © Copyright Sakura Floral Society 2025.
+</div>
 
 </body>
 </html>
