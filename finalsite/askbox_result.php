@@ -43,7 +43,7 @@ body
   } 
 h1Thank you!h1
 
-pThank you for ordering from Black Goose Bistro. We have received the following information about your orderp
+pThanks for your question! We'll get back to you soon!p
 
 h2Your Informationh2
 ul
@@ -54,7 +54,7 @@ listrongEmail Addressstrong php print $_POST['email']  $_POST['email']  'emempty
 ul
 pstrongDelivery instructionsstrong php print $_POST['instructions']  $_POST['instructions']  'ememptyem'; p
 
-h2Your pizzah2
+h2Your questionh2
 
 php if (!isset($_POST['crust']) && !isset($_POST['toppings']) && !isset($_POST['pizzas'])) { 
 emSorry, we did not receive your information. a href=httpwww.blackgoosebistro.compizza.htmlTry again.aem
