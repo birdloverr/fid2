@@ -70,7 +70,7 @@ img.responsive-img {
 
     nav li {
       display: inline;
-      margin: 0 15px;
+      margin: 0 10px;
     }
 
     nav a {
