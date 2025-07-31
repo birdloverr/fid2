@@ -107,14 +107,7 @@ img.responsive-img {
 head
 
 body
-  php if (isset($_POST['toppings']) && !is_array($_POST['toppings'])) {
-    $toppings_problem = TRUE;
-    $toppings = is_string($_POST['toppings'])  $_POST['toppings']  'ememptyem';
-  }
-  else {
-    $toppings_problem = FALSE;
-    $toppings = isset($_POST['toppings'])  implode(', ', $_POST['toppings'])  'ememptyem';
-  } 
+  
 h1Thank you!h1
 
 pThanks for your question! We'll get back to you soon!p
@@ -122,32 +115,14 @@ pThanks for your question! We'll get back to you soon!p
 h2Your Informationh2
 ul
 listrongNamestrong php print $_POST['customername']  $_POST['customername']  'ememptyem'; li
-listrongAddressstrong php print $_POST['address']  $_POST['address']  'ememptyem'; li
 listrongTelephone numberstrong php print $_POST['telephone']  $_POST['telephone']  'ememptyem'; li
 listrongEmail Addressstrong php print $_POST['email']  $_POST['email']  'ememptyem'; li
 ul
-pstrongDelivery instructionsstrong php print $_POST['instructions']  $_POST['instructions']  'ememptyem'; p
 
 h2Your questionh2
+pstrongYour Questionstrong php print $_POST['question']  $_POST['question']  'ememptyem'; p
 
-php if (!isset($_POST['crust']) && !isset($_POST['toppings']) && !isset($_POST['pizzas'])) { 
-emSorry, we did not receive your information. a href=httpwww.blackgoosebistro.compizza.htmlTry again.aem
-php } 
-  else { 
-    ul
-    listrongCruststrong php print isset($_POST['crust']) && $_POST['crust']  $_POST['crust']  'ememptyem'; li
-    listrongToppingsstrong php
-      print $toppings;
-      if ($toppings_problem) { 
-        span style=colorredspan
-     php } li
-    listrongNumberstrong php print isset($_POST['pizzas']) && $_POST['pizzas']  $_POST['pizzas']  'ememptyem'; li
-    ul
-php  }
-if ($toppings_problem) { 
-  hr 
-  p&nbsp;p
-php } 
+
 
 body
 html
